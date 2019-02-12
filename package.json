@@ -1,0 +1,21 @@
+{
+  "name": "board-bundler",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/things-shell/board-bundler.git",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@things-scene/form": "^0.3.15",
+    "@things-scene/gauge": "^2.3.1",
+    "@things-scene/indoor-map": "^2.3.8",
+    "@things-scene/progressbar": "^2.3.3",
+    "@things-scene/random": "^0.3.7",
+    "@things-scene/restful": "^0.3.6",
+    "@things-scene/table": "^2.4.10"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}
