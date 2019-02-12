@@ -1,0 +1,65 @@
+<!--
+  @license
+  Copyright © HatioLab Inc. All rights reserved.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>things-scene Test</title>
+
+    <style>
+      html,
+      body {
+        height: 90%;
+      }
+      #scene {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <!-- <script
+      type="module"
+      data-name="scene"
+      src="../node_modules/@hatiolab/things-scene/things-scene.mjs"
+    ></script>
+    <script type="module" src="../dist/board-bundle.js"></script>
+    <script src="/things-board.js"></script> -->
+  </head>
+  <body>
+    <div id="scene"></div>
+
+    <p>
+      <button onClick="create()">Create</button>
+      <button onClick="dispose()">Dispose</button>
+      <button onClick="change()">change</button>
+      <button onClick="undo()">undo</button>
+      <button onClick="redo()">redo</button>
+      <button onClick="fullscreen()">Full-Screen</button>
+      <button onClick="grouping()">grouping</button>
+      <button onClick="ungrouping()">ungrouping</button>
+      <button onClick="distribute_horizontal()">distribute_horizontal</button>
+      <button onClick="distribute_vertical()">distribute_vertical</button>
+    </p>
+
+    <script type="text/javascript" src="./index.js"></script>
+
+    <script>
+      var scene = null
+      import('../node_modules/@hatiolab/things-scene/things-scene.mjs').then(
+        m => {
+          scene = m
+          import('../dist/board-bundle.js').then(() => {
+            ////////////////////
+            create()
+            setTimeout(function() {
+              scene.license(ThingsLicense)
+            }, 1000)
+            ////////////////
+          })
+        }
+      )
+    </script>
+  </body>
+</html>
