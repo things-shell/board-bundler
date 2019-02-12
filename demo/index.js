@@ -9,7 +9,7 @@ var model = {
   height: 900,
   components: [
     {
-      type: 'select',
+      type: 'indoor-map',
       top: 30,
       left: 30,
       width: 200,
@@ -18,6 +18,7 @@ var model = {
       fontSize: '30',
       fontFamily: 'serif',
       fillStyle: 'red',
+      src: '',
       // hidden: true,
       text: '이 예제에서는 숨김 속성을 설명합니다.'
     } /*, {

@@ -19,13 +19,14 @@
         width: 100%;
       }
     </style>
-    <!-- <script
-      type="module"
-      data-name="scene"
-      src="../node_modules/@hatiolab/things-scene/things-scene.mjs"
+    <script
+      type="text/javascript"
+      src="../node_modules/@hatiolab/things-scene/things-scene-min.js"
     ></script>
-    <script type="module" src="../dist/board-bundle.js"></script>
-    <script src="/things-board.js"></script> -->
+    <!-- <script type="module" src="../dist/board-bundle.js"></script> -->
+
+    <script type="text/javascript" src="../dist/board-bundle.js"></script>
+    <script src="/things-board.js"></script>
   </head>
   <body>
     <div id="scene"></div>
@@ -46,20 +47,20 @@
     <script type="text/javascript" src="./index.js"></script>
 
     <script>
-      var scene = null
-      import('../node_modules/@hatiolab/things-scene/things-scene.mjs').then(
-        m => {
-          scene = m
-          import('../dist/board-bundle.js').then(() => {
-            ////////////////////
-            create()
-            setTimeout(function() {
-              scene.license(ThingsLicense)
-            }, 1000)
-            ////////////////
-          })
-        }
-      )
+      //   var x = null
+      //   import('../node_modules/@hatiolab/things-scene/things-scene.mjs').then(
+      //     m => {
+      //       x = m
+      //   import('../dist/board-bundle.mjs').then(() => {
+      //////////////////
+      create()
+      setTimeout(function() {
+        scene.license(ThingsLicense)
+      }, 1000)
+      //////////////
+      //   })
+      //     }
+      //   )
     </script>
   </body>
 </html>

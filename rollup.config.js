@@ -36,7 +36,7 @@ export default [
     output: [
       {
         file: `dist/${PACKAGE_NAME}.js`,
-        name: PACKAGE_NAME,
+        name: 'BoardBundle',
         format: 'umd',
         globals: {
           '@hatiolab/things-scene': 'scene'
@@ -47,7 +47,7 @@ export default [
   {
     input: 'src/index.js',
     plugins,
-    external: externalForESM,
+    // external: externalForESM,
     output: [
       {
         file: pkg.module,
