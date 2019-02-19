@@ -20,9 +20,9 @@ module.exports = {
   resolveLoader: {
     modules: ['./node_modules']
   },
-  // externals: {
-  //   '@hatiolab/things-scene': 'scene'
-  // },
+  externals: {
+    '@hatiolab/things-scene': 'scene'
+  },
   optimization: {
     minimize: true
   },
@@ -34,44 +34,43 @@ module.exports = {
       }
     ]
   },
-  //   module: {
-  //     rules: [
-  //       {
-  //         test: /\.js$/,
-  //         exclude: /(node_modules)/,
-  //         loader: 'babel-loader',
-  //         options: {
-  //           presets: [
-  //             [
-  //               '@babel/preset-env',
-  //               {
-  //                 targets: {
-  //                   browsers: ['last 2 versions', 'safari >= 7', 'ie 11']
-  //                 }
-  //               }
-  //             ]
-  //           ]
-  //         }
-  //       },
-  //       {
-  //         test: /\.(gif|jpe?g|png)$/,
-  //         loader: 'url-loader?limit=25000',
-  //         query: {
-  //           limit: 10000,
-  //           name: '[path][name].[hash:8].[ext]'
-  //         }
-  //       },
-  //       {
-  //         test: /\.(obj|mtl|tga|3ds|max|dae)$/,
-  //         use: [
-  //           {
-  //             loader: 'file-loader',
-  //             options: {}
-  //           }
-  //         ]
-  //       }
-  //     ]
-  //   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            [
+              '@babel/preset-env',
+              {
+                targets: {
+                  browsers: ['last 2 versions', 'ie 11']
+                }
+              }
+            ]
+          ]
+        }
+      },
+      {
+        test: /\.(gif|jpe?g|png)$/,
+        loader: 'url-loader?limit=25000',
+        query: {
+          limit: 10000,
+          name: '[path][name].[hash:8].[ext]'
+        }
+      },
+      {
+        test: /\.(obj|mtl|tga|3ds|max|dae)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
+    ]
+  },
   plugins: [
     new UglifyJsPlugin({
       test: /\-min\.js$/
