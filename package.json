@@ -1,6 +1,6 @@
 {
-  "name": "board-bundler",
-  "version": "1.0.0",
+  "name": "@things-shell/board-bundler",
+  "version": "0.0.1",
   "main": "src/index.js",
   "module": "dist/board-bundle.mjs",
   "repository": "https://github.com/things-shell/board-bundler.git",
