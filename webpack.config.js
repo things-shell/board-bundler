@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   mode: 'production',
   entry: {
-    'board-bundle': ['./src/index.mjs']
+    'board-bundle': ['./src/index.js']
   },
   output: {
     path: path.resolve('./dist'),
@@ -26,16 +26,20 @@ module.exports = {
   optimization: {
     minimize: true
   },
+  // module: {
+  //   rules: [
+  // {
+  //   test: /\.mjs$/,
+  //   type: 'javascript/auto'
+  // }
+  //   ]
+  // },
   module: {
     rules: [
       {
         test: /\.mjs$/,
         type: 'javascript/auto'
-      }
-    ]
-  },
-  module: {
-    rules: [
+      },
       {
         test: /\.js$/,
         loader: 'babel-loader',
