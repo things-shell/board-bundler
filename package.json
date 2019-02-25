@@ -16,6 +16,7 @@
     "@things-scene/clone": "^2.3.3",
     "@things-scene/compass": "^2.3.3",
     "@things-scene/echart": "^0.4.3",
+    "@things-scene/excel": "^0.1.4",
     "@things-scene/firebase": "^0.5.2",
     "@things-scene/forklift": "^2.2.2",
     "@things-scene/form": "^0.3.20",
