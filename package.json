@@ -1,6 +1,6 @@
 {
   "name": "@things-shell/board-bundler",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "src/index.js",
   "module": "dist/board-bundle.mjs",
   "repository": "https://github.com/things-shell/board-bundler.git",
@@ -11,7 +11,7 @@
     "prepublish": "webpack"
   },
   "dependencies": {
-    "@things-scene/chartjs": "^4.0.8",
+    "@things-scene/chartjs": "^4.0.9",
     "@things-scene/clock": "^2.3.3",
     "@things-scene/clone": "^2.3.3",
     "@things-scene/compass": "^2.3.3",
@@ -40,13 +40,13 @@
     "@things-scene/wheel-sorter": "^2.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@hatiolab/things-scene": "^2.5.18",
     "babel-loader": "^8.0.5",
-    "rollup": "^1.6.0",
+    "rollup": "^1.7.3",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-commonjs": "^9.2.2",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "uglifyjs-webpack-plugin": "^2.1.2",
