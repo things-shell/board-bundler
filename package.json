@@ -1,6 +1,6 @@
 {
   "name": "@things-shell/board-bundler",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "src/index.js",
   "module": "dist/board-bundle.mjs",
   "repository": "https://github.com/things-shell/board-bundler.git",
@@ -34,7 +34,7 @@
     "@things-scene/slam": "^0.3.2",
     "@things-scene/stomp": "^0.4.8",
     "@things-scene/tab": "^2.3.4",
-    "@things-scene/table": "^2.5.5",
+    "@things-scene/table": "^2.5.6",
     "@things-scene/traffic": "^0.4.2",
     "@things-scene/visualizer": "^0.5.23",
     "@things-scene/wheel-sorter": "^2.3.2"
