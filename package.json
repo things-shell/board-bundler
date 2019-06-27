@@ -1,6 +1,6 @@
 {
   "name": "@things-shell/board-bundler",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "src/index.js",
   "module": "dist/board-bundle.mjs",
   "repository": "https://github.com/things-shell/board-bundler.git",
@@ -15,6 +15,7 @@
     "@things-scene/clock": "*",
     "@things-scene/clone": "*",
     "@things-scene/compass": "*",
+    "@things-scene/data-transform": "*",
     "@things-scene/echart": "*",
     "@things-scene/excel": "*",
     "@things-scene/firebase": "*",
@@ -31,7 +32,6 @@
     "@things-scene/progressbar": "*",
     "@things-scene/random": "*",
     "@things-scene/restful": "*",
-    "@things-scene/data-transform": "*",
     "@things-scene/slam": "*",
     "@things-scene/stomp": "*",
     "@things-scene/tab": "*",
