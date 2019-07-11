@@ -11,6 +11,7 @@
     "prepublish": "webpack"
   },
   "dependencies": {
+    "@things-scene/baidu-map": "*",
     "@things-scene/chartjs": "*",
     "@things-scene/clock": "*",
     "@things-scene/clone": "*",

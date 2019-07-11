@@ -5,6 +5,7 @@
 // Object.keys(DEPS).forEach(k => {
 //   require(`../node_modules/${k}`)
 // })
+import '@things-scene/baidu-map'
 import '@things-scene/chartjs'
 import '@things-scene/clock'
 import '@things-scene/clone'
