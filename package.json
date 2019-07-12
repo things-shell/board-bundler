@@ -29,6 +29,7 @@
     "@things-scene/legend": "*",
     "@things-scene/marker": "*",
     "@things-scene/mqtt": "*",
+    "@things-scene/news-ticker": "*",
     "@things-scene/person": "*",
     "@things-scene/progressbar": "*",
     "@things-scene/random": "*",
